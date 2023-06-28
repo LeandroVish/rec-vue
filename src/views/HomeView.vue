@@ -1,9 +1,18 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function goAbout() {
+  router.push('/about')
+}
+
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <h1>Home</h1>
+  <button @click="goAbout"> Ir para Sobre </button>
+  <button @click="$router.push('/')"> Ir para Ajuda </button>
 </template>
+
+<style scoped></style>
