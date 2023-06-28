@@ -1,14 +1,19 @@
 <script setup>
 import MeuCarrinho from '@/components/MeuCarrinho.vue'
-import FormCompras from '@/components/FormCompras.vue'
+import MeuLogin  from '@/components/MeuLogin.vue'
+// import MeuForm from '@/components/MeuForm.vue'
 </script>
 
 <template>
   <header>
   <h1>LM</h1>
   <meu-carrinho />
-  <form-compras />
+  <meu-login />
+  <meu-form />
 </header>
+<main>
+  <router-view />
+</main>
 </template>
 
 <style scoped>
