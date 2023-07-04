@@ -32,3 +32,4 @@ function adicionarAoCarrinho(moveis) {
     carrinho.value.total += moveis.price
   }
 }
+export { carrinho, adicionarAoCarrinho, removerItemCarrinho, atualizaQuantidadeItem }

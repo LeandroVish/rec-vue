@@ -1,5 +1,5 @@
 <script setup>
-import MeuForm from '../components/MeuForm.vue'
+// import MeuForm from '../components/MeuForm.vue'
 </script>
 
 <template>
@@ -29,7 +29,7 @@ import MeuForm from '../components/MeuForm.vue'
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <meu-form />
+                    <!-- <meu-form /> -->
                 </div>
             </div>
         </div>

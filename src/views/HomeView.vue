@@ -1,4 +1,5 @@
 <script setup>
+import ListagemItens from '../components/ListagemItens.vue';
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -11,7 +12,7 @@ function goAbout() {
 
 <template>
   <button @click="goAbout"> Próximo </button>
-<!--  <button @click="$router.push('/')"> Ir para Ajuda </button> -->
+  <listagem-itens/>
 </template>
 
 <style scoped></style>

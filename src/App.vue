@@ -1,7 +1,8 @@
 <script setup>
+// import ListagemItens from './components/ListagemItens.vue'
 import MeuCarrinho from '@/components/MeuCarrinho.vue'
 import MeuLogin  from '@/components/MeuLogin.vue'
-// import MeuForm from '@/components/MeuForm.vue'
+import MeuForm from '@/components/MeuForm.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import MeuLogin  from '@/components/MeuLogin.vue'
 </header>
 <main>
   <router-view />
+<!--  <listagem-itens/> -->
 </main>
 </template>
 
