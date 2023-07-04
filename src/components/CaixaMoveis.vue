@@ -1,28 +1,28 @@
 <script setup>
 const props = defineProps({
-    moveis: Object
+  movel: Object
 })
 
 const emit = defineEmits(['adicionarAoCarrinho'])
 
 function formatarPreco(preco) {
-    return 'R$ ' + preco.toFixed(2).replace('.', ',')
+  return 'R$ ' + preco.toFixed(2).replace('.', ',')
 }
 </script>
 
 <template>
-    <div class="card">
-        <div class="card-info">
-            <div class="wrap">
-                <img :src="props.moveis.img" alt="Imagem Movel" class="foto" />
-            </div>
-            <p class="nome-movel">{{ props.moveis.name }}</p>
-            <p class="preco-movel">{{ formatarPreco(props.moveis.price) }}</p>
-        </div>
-        <div class="card-buttons">
-            <button @click="emit('adicionarAoCarrinho', props.moveis)" text="Adicionar ao carrinho"></button>
-        </div>
+  <div class="card">
+    <div class="card-info">
+      <div class="wrap">
+        <img :src="props.movel.img" alt="Imagem Movel" class="foto" />
+      </div>
+      <p class="nome-movel">{{ props.movel.name }}</p>
+      <p class="preco-movel">{{ formatarPreco(props.movel.price) }}</p>
     </div>
+    <div class="card-buttons">
+      <button @click="emit('adicionarAoCarrinho', props.movel)" text="Adicionar ao carrinho"></button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -46,6 +46,7 @@ function formatarPreco(preco) {
   width: 180px;
   height: 270px;
 }
+
 .foto {
   width: 90%;
   max-height: 100%;

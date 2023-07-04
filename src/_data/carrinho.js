@@ -17,19 +17,19 @@ function removerItemCarrinho(item) {
   carrinho.value.itens.splice(index, 1)
 }
 
-function adicionarAoCarrinho(moveis) {
-  const index = carrinho.value.itens.findIndex((item) => item.id === moveis.id)
+function adicionarAoCarrinho(movel) {
+  const index = carrinho.value.itens.findIndex((item) => item.id === movel.id)
   if (index === -1) {
     carrinho.value.itens.push({
-      ...moveis,
+      ...movel,
       quantidade: 1,
-      total: moveis.price
+      total: movel.price
     })
-    carrinho.value.total += moveis.price
+    carrinho.value.total += movel.price
   } else {
     carrinho.value.itens[index].quantidade++
-    carrinho.value.itens[index].total += moveis.price
-    carrinho.value.total += moveis.price
+    carrinho.value.itens[index].total += movel.price
+    carrinho.value.total += movel.price
   }
 }
 export { carrinho, adicionarAoCarrinho, removerItemCarrinho, atualizaQuantidadeItem }
