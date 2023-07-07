@@ -22,7 +22,7 @@ function formatarPreco(preco) {
     </div>
     <div class="card-buttons">
       <botao-top
-        @click="emit('adicionarAoCarrinho', props.livro)"
+        @click="emit('adicionarAoCarrinho', props.movel)"
         text="Adicionar ao carrinho"
       ></botao-top>
     </div>

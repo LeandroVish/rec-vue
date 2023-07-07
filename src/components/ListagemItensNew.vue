@@ -1,5 +1,5 @@
 <script setup>
-import { moveis } from '@/_data/moveis.js'
+import { moveis2 } from '@/_data/moveis.js'
 import { adicionarAoCarrinho } from '@/_data/carrinho.js'
 import CaixaMoveis from '@/components/CaixaMoveis.vue'
 </script>
@@ -7,9 +7,9 @@ import CaixaMoveis from '@/components/CaixaMoveis.vue'
 <template>
   <div class="lista-item">
     <caixa-moveis
-      v-for="movel in moveis"
-      v-bind:key="movel.id"
-      v-bind:movel="movel"
+      v-for="movel2 in moveis2"
+      v-bind:key="movel2.id"
+      v-bind:movel="movel2"
       @adicionarAoCarrinho="adicionarAoCarrinho"
     />
   </div>

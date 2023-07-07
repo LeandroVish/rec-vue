@@ -20,12 +20,12 @@ function formatarPreco(preco) {
             <div class="offcanvas-body">
                 <carrinho-sem-nada v-if="carrinho.itens.length === 0" />
                 <div v-else>
-                    <div class="itens-carrinho" v-for="(itens, index) in carrinho.itens" :key="index">
+                    <div class="itens-carrinho" v-for="(item, index) in carrinho.itens" :key="index">
                         <div class="info">
                             <div class="img-movel">
                                 <img src="item.img" class="icon-foto-movel">
                             </div>
-                            <div class="detalhe">
+                            <div class="detalhes">
                                 <div>
                                     <p>{{ item.name }}</p>
                                     <p class="info-movel-preco">{{ formatarPreco(item.price) }}/un</p>
@@ -47,7 +47,7 @@ function formatarPreco(preco) {
                         </div>
                     </div>
                 </div>
-                <button>a</button>
+                <p class="carrinho-total">Total: {{ formatarPreco(carrinho.total) }}</p>
             </div>
         </div>
     </div>
@@ -61,25 +61,25 @@ function formatarPreco(preco) {
   font-weight: bold;
 }
 
-.item-carrinho .info-livro {
+.itens-carrinho .info {
   display: flex;
   margin-bottom: 10px;
 }
-.detalhes-livro {
+.detalhes {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.detalhes-livro p {
+.detalhes p {
   margin: 0;
 }
-.detalhes-livro div {
+.detalhes div {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.detalhes-livro input[type='number'] {
+.detalhes input[type='number'] {
   width: 50px;
   text-align: center;
   border: none;
@@ -88,7 +88,7 @@ function formatarPreco(preco) {
   margin-left: 10px;
 }
 
-.detalhes-movel button {
+.detalhes button {
   background-color: transparent;
   border: none;
   cursor: pointer;
