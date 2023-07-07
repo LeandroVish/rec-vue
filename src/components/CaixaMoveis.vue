@@ -1,4 +1,5 @@
 <script setup>
+import BotaoTop from './BotaoTop.vue';
 const props = defineProps({
   movel: Object
 })
@@ -20,18 +21,21 @@ function formatarPreco(preco) {
       <p class="preco-movel">{{ formatarPreco(props.movel.price) }}</p>
     </div>
     <div class="card-buttons">
-      <button @click="emit('adicionarAoCarrinho', props.movel)" text="Adicionar ao carrinho"></button>
+      <botao-top
+        @click="emit('adicionarAoCarrinho', props.livro)"
+        text="Adicionar ao carrinho"
+      ></botao-top>
     </div>
   </div>
 </template>
 
 <style scoped>
 .card {
-  margin: 5px 10px;
+  margin: 15px 30px;
   padding: 10px;
   background-color: rgb(223, 107, 107);
   border-radius: 10px;
-  width: 180px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,11 +52,11 @@ function formatarPreco(preco) {
 }
 
 .foto {
-  width: 90%;
+  width: 95%;
   max-height: 100%;
 }
 
-p {
+.card p {
   margin: 0;
 }
 

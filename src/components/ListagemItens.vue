@@ -7,9 +7,9 @@ import CaixaMoveis from '@/components/CaixaMoveis.vue'
 <template>
 <div class="lista-item">
     <caixa-moveis 
-    v-for="moveis in movel"
-    v-bind:key="moveis.id"
-    v-bind:movel="moveis"
+    v-for="movel in moveis"
+    v-bind:key="movel.id"
+    v-bind:movel="movel"
     @adicionaeAoCarrinho="adicionarAoCarrinho"
     />
 </div>
