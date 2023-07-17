@@ -32,32 +32,32 @@ export const moveis = [
 ]
 export const moveis2 = [
     {
-        id: 1,
-        name: 'teste1',
+        id: 6,
+        name: 'teste6',
         price: 10.0,
         img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg',
     },
     {
-        id: 2,
-        name: 'teste1',
+        id: 7,
+        name: 'teste7',
         price: 10.0,
         img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg',
     },
     {
-        id: 3,
-        name: 'teste1',
+        id: 8,
+        name: 'teste8',
         price: 10.0,
         img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg',
     }
     ,{
-        id: 4,
-        name: 'teste1',
+        id: 9,
+        name: 'teste9',
         price: 10.0,
         img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg',
     },
     {
-        id: 5,
-        name: 'teste1',
+        id: 10,
+        name: 'teste10',
         price: 10.0,
         img: 'https://m.media-amazon.com/images/I/31jGFI5wX2L._SX331_BO1,204,203,200_.jpg',
     }

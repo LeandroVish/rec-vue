@@ -18,12 +18,13 @@ function formatarPreco(preco) {
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
+              <div class="wrap-carrinho">
                 <carrinho-sem-nada v-if="carrinho.itens.length === 0" />
                 <div v-else>
                     <div class="itens-carrinho" v-for="(item, index) in carrinho.itens" :key="index">
                         <div class="info">
                             <div class="img-movel">
-                                <img src="item.img" class="icon-foto-movel">
+                                <img :src="item.img" class="icon-foto-movel">
                             </div>
                             <div class="detalhes">
                                 <div>
@@ -40,8 +41,9 @@ function formatarPreco(preco) {
                                         min="1"
                                         />
                                     </p>
-                                    <botao-top @click="removerItemCarrinho(item)">&#128465;</botao-top>
+                                    <botao-top @click="removerItemCarrinho(item)">a</botao-top>
                                     <p>Total: {{ formatarPreco(item.total) }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +104,7 @@ function formatarPreco(preco) {
   margin-left: auto;
 }
 .icon-foto-movel {
-  width: 30px;
+  width: 80px;
   margin-right: 10px;
 }
 </style>
