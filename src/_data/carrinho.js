@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { moveis } from './moveis'
 
 const carrinho = ref({
   itens: [],
@@ -32,4 +33,5 @@ function adicionarAoCarrinho(movel) {
     carrinho.value.total += movel.price
   }
 }
+
 export { carrinho, adicionarAoCarrinho, removerItemCarrinho, atualizaQuantidadeItem }

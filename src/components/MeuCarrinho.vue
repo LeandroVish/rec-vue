@@ -1,7 +1,7 @@
 <script setup>
-import { carrinho, removerItemCarrinho, atualizaQuantidadeItem } from '../_data/carrinho.js'
+import { carrinho, removerItemCarrinho, atualizaQuantidadeItem, limparCarrinho } from '../_data/carrinho.js'
 import CarrinhoSemNada from './CarrinhoSemNada.vue'
-import BotaoTop from './BotaoTop.vue';
+// import BotaoTop from './BotaoTop.vue';
 
 function formatarPreco(preco) {
     return 'R$' + preco.toFixed(2).replace('.',',')
@@ -41,7 +41,7 @@ function formatarPreco(preco) {
                                         min="1"
                                         />
                                     </p>
-                                    <botao-top @click="removerItemCarrinho(item)">a</botao-top>
+                                    <button @click="removerItemCarrinho(item)">&#128465;</button>
                                     <p>Total: {{ formatarPreco(item.total) }}</p>
                                     </div>
                                 </div>
@@ -49,6 +49,7 @@ function formatarPreco(preco) {
                         </div>
                     </div>
                 </div>
+                <button @click="limparCarrinho">Limpar carrinho</button>
                 <p class="carrinho-total">Total: {{ formatarPreco(carrinho.total) }}</p>
             </div>
         </div>
@@ -104,7 +105,7 @@ function formatarPreco(preco) {
   margin-left: auto;
 }
 .icon-foto-movel {
-  width: 80px;
+  width: 60px;
   margin-right: 10px;
 }
 </style>
