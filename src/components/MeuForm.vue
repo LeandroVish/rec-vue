@@ -29,7 +29,6 @@
         Hide this modal and show the first with the button below.
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
       </div>
     </div>
   </div>

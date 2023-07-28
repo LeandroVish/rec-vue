@@ -1,9 +1,9 @@
 export const moveis = [
     {
         id: 1,
-        name: 'teste1',
+        name: 'Cadeira',
         price: 10.0,
-        img: 'https://hiperequipamentos.fbitsstatic.net/img/p/cadeira-rustica-quadrada-de-madeira-crua-%E2%80%93-tam-80-cm-vctt-cr-68846/255561-1.jpg?w=800&h=800&v=no-change&qs=ignore',
+        img: 'https://marcena.com.br/wp-content/uploads/2021/05/Moveis-Sob-Medida-Banco-Canto-Painel-LouroFreijo-Medidas-1.png',
     },
     {
         id: 2,
