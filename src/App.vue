@@ -1,6 +1,5 @@
 <script setup>
 import MeuCarrinho from '@/components/MeuCarrinho.vue'
-import MeuLogin from '@/components/MeuLogin.vue'
 import MeuForm from '@/components/MeuForm.vue'
 </script>
 
@@ -8,7 +7,6 @@ import MeuForm from '@/components/MeuForm.vue'
   <header>
     <h1>LM</h1>
     <meu-carrinho />
-    <meu-login />
     <meu-form />
   </header>
   <main>
